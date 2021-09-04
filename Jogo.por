@@ -8,6 +8,7 @@ programa
 	// imagens
      inteiro imagem_de_fundo = g.carregar_imagem("img/plano-de-fundo.jpeg")
      inteiro icone = g.carregar_imagem("img/icon.png")
+     inteiro monstro = g.carregar_imagem("img/monstro.png")
      //contador
      inteiro cont=0
 	
@@ -30,13 +31,14 @@ programa
 		g.definir_cor(g.COR_PRETO)
 		g.desenhar_texto(10, 10, "Movimente a bolinha com A W S D, para sair clique Esc.")
 		g.desenhar_elipse(bolinha_x, bolinha_y, 20, 20, verdadeiro)
+		g.desenhar_imagem(0, 0, monstro)
 		g.renderizar()
 	}
 	
 	funcao inicio(){
 		g.iniciar_modo_grafico(verdadeiro)
 		g.definir_dimensoes_janela(1024, 576)
-		g.definir_titulo_janela("JOGO")
+		g.definir_titulo_janela("JOGO IDADE MEDIA")
 		g.definir_icone_janela(icone)
 		enquanto(nao t.tecla_pressionada(t.TECLA_ESC)){
 			controle()
@@ -49,7 +51,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 629; 
+ * @POSICAO-CURSOR = 1129; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
